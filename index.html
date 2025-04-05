@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Котелок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Котелок</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <label for="searchInput">Поиск товаров:</label>
+        <input type="text" id="searchInput" placeholder="Введите запрос и нажмите Enter..." />
+    </section>
+
+    <main id="mainContainer">
+        <h2>Каталог товаров</h2>
+        <div id="productsList">
+            <div class="product" data-id="Шина!" id="shina01">
+                <img src="https://via.placeholder.com/100" alt="Шина" />
+                <h3>Шина</h3>
+                <p>
+                    Нужно поменять резину? Давно пора! Купите комплект весенней резины в нашем онлайн-магазине! Для добавления товара, нажмите на кнопку!
+                </p>
+                <button class="addToCartBtn">Добавить в корзину</button>
+            </div>
+            <div class="product" data-id="Цветочек" id="tsvetok02">
+                <img src="https://via.placeholder.com/100" alt="Цветок" />
+                <h3>Цветок</h3>
+                <p>
+                    Как лучше можно отметить наступление весны как не цветами? Украсьте свою жинь новыми красками природы! Весенние цветы, для добавления в корзину нажмите на кнопку!
+                </p>
+                <button class="addToCartBtn">Добавить в корзину</button>
+            </div>
+        </div>
+        
+        <aside id="cart">
+            <h3>Ваша корзина</h3>
+            <div id="cartContent">
+                <p>Корзина пуста.</p>
+            </div>
+            <button id="clearCartBtn">Очистить корзину</button>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
